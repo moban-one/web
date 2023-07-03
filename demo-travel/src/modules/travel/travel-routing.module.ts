@@ -5,8 +5,8 @@ import { PageActiveComponent } from './page-active/page-active.component';
 import { PageMyComponent } from './page-my/page-my.component';
 const routes: Routes = [
   {path:"home", component:PageHomeComponent},
-  {path:"active", component:PageActiveComponent},
-  {path:"my", component:PageMyComponent},
+  {path:"active", component:PageActiveComponent},
+  {path:"my", component:PageMyComponent},
 ];
 
 @NgModule({

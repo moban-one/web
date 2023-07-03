@@ -14,7 +14,20 @@
 
 # 二、技术文档
 ## 产品结构图
-
+[](../Assets/daotu.png)
+## 模块
+### 项目目录名：demo-travel
+### 项目模块名：travel
+### 项目组件
+- 页面-首页：page-home
+    - 路由：travel/home
+    - 组件名：page-home
+- 页面-动态：page-active
+    - 路由：travel/active
+    - 组件名：page-active
+- 页面-动态：page-my
+    - 路由：travel/my
+    - 组件名：page-my
 ## 信息结构图
 字段代码|字段名称|字段类型
 :---:|:---:|:---:
