@@ -1,0 +1,11 @@
+.rating-body{
+    width:100%;
+    display: flex;
+    .star{
+        width:20px;
+        height:20px;
+        padding: 3px;
+        margin-right: 5px;
+        flex:1;
+    }
+}

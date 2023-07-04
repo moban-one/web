@@ -1,1 +1,14 @@
-<p>page-active works!</p>
+
+
+<div *ngFor="let article of list" style="width: 100vw;height:auto;background-color: antiquewhite;">
+    <h1 (click)="goDetail(article)">{{article.title}}</h1>
+    <button (click)="startRating(article)"> 打分 </button>
+
+    <ng-container *ngIf="article.isStartRating">
+        <nova-comp-star-rating [score]="article.rating" (scoreChange)="onScoreChange(article,$event)"></nova-comp-star-rating>
+    </ng-container>
+
+    <h1>打分结果：{{article.rating}}</h1>
+    <h2>点赞数：{{tok(article.likeCount)}}</h2>
+    <h2>发布时间：{{article.publishDate | date:"yyyy-MM-dd HH-mm-ss"}}</h2>
+</div>
